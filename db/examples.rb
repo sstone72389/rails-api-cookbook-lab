@@ -17,3 +17,15 @@
 #                password: 'abc123',
 #                password_confirmation: nil)
 # end
+
+Recipe.create([
+                { name: 'tacos',
+                  direction: 'eat them'},
+                { name: 'steak',
+                  direction: 'eat it'},
+                { name: 'sanwich',
+                  direction: 'eat it'},
+                { name: 'wings',
+                  direction: 'eat them'}
+              ]
+            )
