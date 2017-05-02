@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
   # get '/ingredients', to: 'ingredients#index'
   resources :ingredients, only: [:index, :show, :destroy, :update, :create]
+  resources :recipe_ingredients, except: [:new, :edit]
 end
